@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/recursos/css/login.css" />
+    <link rel="icon" href="/recursos/img/agro.ico">
+    <title>Agrolink | Registro</title>
+  </head>
+  <!-- INICIO DE LOGIN -->
+  <body>
+    <div class="container">
+      <div class="forms-container">
+        <div class="signin-signup">
+          <!-- INICIO DE SESIÓN -->
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Iniciar Sesión</h2>
+            <div class="input-field">
+              <!-- BARRA DE USUARIO -->
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Nombre" />
+            </div>
+            <!-- BARRA DE CONTRASEÑA -->
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Contraseña" />
+            </div>
+            <!-- BOTON INICIAR SESIÓN -->
+            <input type="submit" value="Inicio de sesión" class="btn solid" />
+            <p class="social-text">Inicia sesión con tus redes sociales</p>
+            <!-- BOTONES DE REDES SOCIALES -->
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </form>
+          <!-- REGISTRO DE CUENTA NUEVA -->
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Registrar</h2>
+            <div class="input-field">
+              <!-- BARRA DE USUARIO -->
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Nombre" />
+            </div>
+            <!-- BARRA DE CORREO -->
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Correo" />
+            </div>
+            <!-- CONTRASENA -->
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Contraseña" />
+            </div>
+            <!-- ELEGIR TIPO DE USUARIO -->
+            <div class="input-field">  
+                <i class="fa-solid fa-book"></i>
+                <select class="select-box" placeholder="Rol de Usuario">    
+                    <option class="invisible" value="" disabled selected>Selecciona un rol</option>
+                    <option value="cliente">Cliente</option>
+                    <option value="administrador">Administrador de Ventas</option>
+                    <option value="socio">Socio</option>  
+                </select>
+            </div>
+            <!-- REDES SOCIALES-->
+            <input type="submit" class="btn" value="Registrar" />
+            <p class="social-text">Registrate con tus resdes sociales</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </div>
+<!-- ESFERA MOVIBLE -->
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <!-- TEXTO FLOTANTE -->
+            <h3>¿Una vez más?</h3>
+            <p>
+              ¡Qué bueno verte otra vez! Una vez más, ingresa tus datos para acceder a tu cuenta
+            </p>
+            <!-- BOTON DE CAMBIO A REGISTRO -->
+            <button class="btn transparent" id="sign-up-btn">
+              Registrase
+            </button>
+          </div>
+          <img src="/recursos/assets/coffe5.webp" class="image" alt="" />
+        </div>
+        <!-- ESFERA MOVIBLE UNETE -->
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>¡Unete a Nosotros!</h3>
+            <p>
+              Disfruta de todos los beneficios que ofrecemos, con tan solo un "click" puedes aventurarte en el undo del Café
+            </p>
+            <button class="btn transparent" id="sign-in-btn">
+              Iniciar Sesión
+            </button>
+            <!-- IMAGEN DE ESFERA MOVIBLE -->
+          </div>
+          <img src="/recursos/assets/coffe7.webp" class="image" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script src="/recursos/js/app.js"></script>
+  </body>
+</html>
