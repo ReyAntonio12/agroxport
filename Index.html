@@ -2,20 +2,168 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="recursos/img/agro.ico" type="image/x-icon">
+    <link rel="stylesheet" href="recursos/css/style.css">
+    <!--GRAFICOS EXTERNOS-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrolink | Inicio</title>
 </head>
+
 <body>
-    <h1>Este es el website de Agrolink</h1>
-    <h1>Proximamente...</h1>
-    <h1>Esta es una pruba</h1>
-    <h1>Esta es una prueba
-    </h1>
-    <style>
-        body {
-            background-color: blue;
-            color: yellow;
-        }
-    </style>
+    <!--ENCABEZADO-->
+    <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="#" class="nav__logo"> 
+                <img class="log" src="recursos/img/logos.webp"> 
+              </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+
+    <!--MENÚ DE NAVEGACIÓN-->
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           <li><a href="#" class="nav__link">Inicio</a></li>
+
+           <li><a href="#" class="nav__link">Socios</a></li>
+
+    <!--MENÚ DESPLEGABLE #1-->
+    <li class="dropdown__item">
+        <div class="nav__link">
+           Analiticas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+        </div>
+
+        <ul class="dropdown__menu">
+           <li>
+              <a href="#" class="dropdown__link">
+                 <i class="ri-pie-chart-line"></i> Descripción
+              </a>                          
+           </li>
+
+           <li>
+              <a href="#" class="dropdown__link">
+                 <i class="ri-arrow-up-down-line"></i> Transaciones
+              </a>
+           </li>
+
+    <!--POPING MENÚ-->
+    <li class="dropdown__subitem">
+        <div class="dropdown__link">
+           <i class="ri-bar-chart-line"></i> Reportes <i class="ri-add-line dropdown__add"></i>
+        </div>
+
+        <ul class="dropdown__submenu">
+           <li>
+              <a href="#" class="dropdown__sublink">
+                 <i class="ri-file-list-line"></i> Documentos
+              </a>
+           </li>
+
+           <li>
+              <a href="#" class="dropdown__sublink">
+                 <i class="ri-cash-line"></i> Pagos
+              </a>
+           </li>
+
+           <li>
+              <a href="#" class="dropdown__sublink">
+                 <i class="ri-refund-2-line"></i> Reembolsos
+              </a>
+           </li>
+        </ul>
+    </li>
+  </ul>
+</li>
+
+<li><a href="#" class="nav__link">Productos</a></li>
+
+    <!--MENÚ DESPLEGABLE #2-->
+    <li class="dropdown__item">
+        <div class="nav__link">
+           Usuarios <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+        </div>
+
+        <ul class="dropdown__menu">
+           <li>
+              <a href="#" class="dropdown__link">
+                 <i class="ri-user-line"></i> Perfiles
+              </a>                          
+           </li>
+
+           <li>
+              <a href="#" class="dropdown__link">
+                 <i class="ri-lock-line"></i> Cuentas
+              </a>
+           </li>
+
+           <li>
+              <a href="#" class="dropdown__link">
+                 <i class="ri-message-3-line"></i> Mensajes
+              </a>
+           </li>
+        </ul>
+     </li>
+
+     <li><a href="#" class="nav__link">Contactos</a></li>
+  </ul>
+</div>
+</nav>
+</header>
+<!-- CUERPO DE LA PAGINA -->
+<main>
+   <!-- PRESENTACIÓN -->
+   <section class="backhome">
+      <section class="home">
+         <section class="cubehome">
+            <p>Nuevas Ofertas!</p>
+            <h1>Productos cerca de tu hogar</h1>
+            <p>Encuentra Ofertas de hasta un 20% de Descuento sin costo de envio</p>
+         </section>
+      </section>
+   </section>
+   <!-- TARJETAS DE EVENTO -->
+   <section class="contain">
+      <div class="card__contain">
+         <article class="card__article cart1">
+            <img src="recursos/assets/coffe2.webp" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Sabor que Cuenta una Historia"</span>
+               <h2 class="card__title">Café Artesanal</h2>
+               <a href="#" class="card__button">Leer más</a>
+            </div>
+         </article>
+
+         <article class="card__article cart2">
+            <img src="recursos/assets/coffe6.webp" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Sabor que Inspira Viajes</span>
+               <h2 class="card__title">Café de Aventura</h2>
+               <a href="#" class="card__button">Leer más</a>
+            </div>
+         </article>
+
+         <article class="card__article cart3">
+            <img src="recursos/assets/coffe4.webp" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Disfruta la Calidez de Tu Propia Taza</span>
+               <h2 class="card__title">Café Casero</h2>
+               <a href="#" class="card__button">Leer más</a>
+            </div>
+         </article>
+      </div>
+   </section>
+
+</main>
+
+<!--ENLACE JAVASCRIPT-->
+<script src="recursos/js/script.js"></script>
 </body>
 </html>
