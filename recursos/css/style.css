@@ -18,6 +18,9 @@
   --negro: hsl(0, 24%, 18%);
   --blanco: #fff;
   --body-color: hsl(220, 100%, 97%);
+  --gris: #E8E8EA;
+  --gris-oscuro: #bebec4;
+
 
   /*Tipografia*/
   /*5rem = 8px | 1rem = 16px*/
@@ -34,6 +37,16 @@
   /*z index*/
   --z-tooltip: 10;
   --z-fixed: 100;
+}
+
+/* Configuraciones generales */
+
+html{
+  scroll-behavior: smooth;
+}
+
+ul{
+  list-style-type: none; 
 }
 
 /*Tipografia Responsive*/
@@ -555,4 +568,136 @@ a {
     width: 316px;
     padding-inline: 2.5rem;
   } */
+}
+
+
+/* SECCION DE ENVIOS */
+
+.caja__envio{
+  background-color: var(--gris);
+  padding: 8.5rem 2.5rem;
+}
+
+.envio__botones{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.botones__caja{
+  padding: 2.3rem;
+  height: 11.3rem;
+  background-color: var(--gris-oscuro);
+  border-radius: 20px;
+  font-size:.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* 
+.botones__caja:hover{
+
+}
+*/
+
+.botones__icono{
+  color: var(--crema-2);
+  width:60px;
+  height: 60px;
+  padding-bottom: 1.4rem;
+}
+
+/* CAJA SOLO PARA TI */
+.caja__solo-para-ti{
+  position: relative;
+  padding-top: 6.5rem;
+  padding-right: 4.5rem;
+  padding-right: 4.5rem;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.solo-para-ti__imagen-caja{
+  width: 50%;
+}
+
+.solo-para-ti__info{
+  width: 50%;
+  color: var(--crema-3);
+  text-align: center;
+}
+
+.solo-para-ti__imagen{
+  position: absolute;
+  width: 325px;
+  height: 455px;
+  left: 9.5rem;
+  top: -9.5rem;
+}
+
+.solo-para-ti__titulo{
+  padding-bottom: 2.5rem;
+}
+
+/* FOOTER */
+
+.caja__footer{
+  position: relative;
+  background-color: var(--crema-3);
+  padding-top: 4.5rem;
+  padding-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__caja-informacion{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  z-index: 2;
+  width: 100%;
+  padding-bottom: 2.7rem;
+}
+
+.footer__articulo{
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.articulo__titulo{
+  padding-bottom: 0.8rem;
+}
+
+.articulos__item{
+  padding-bottom: 0.4rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.contacto__icono{
+  padding-right: .5rem;
+}
+
+.logo__footer{
+  position: absolute;
+  width: 290px;
+  height: 245px;
+  right: 10rem;
+  bottom: 2.5rem;
+  z-index: 1;
+  transform: rotate(20deg);
+  opacity: 35%;
+}
+
+.footer__final{
+  color: var(--blanco);
 }
