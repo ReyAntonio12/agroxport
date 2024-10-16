@@ -2,11 +2,264 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <link rel="shortcut icon" href="agro.ico" type="image/x-icon">
+    <link rel="stylesheet" href="recursos/css/style.css">
+    <link rel="stylesheet" href="recursos/css/responsive.css">
+    <!--GRAFICOS EXTERNOS-->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrolink | Inicio</title>
 </head>
+
 <body>
-    <h1>Este es el website de Agrolink</h1>
-    <h1>Proximamente...</h1>
+    <!--ENCABEZADO-->
+    <header class="header">
+        <nav class="nav container">
+           <div class="nav__data">
+              <a href="#" class="nav__logo"> 
+                <img class="log" src="recursos/img/logos.webp"> 
+              </a>
+              
+              <div class="nav__toggle" id="nav-toggle">
+                 <i class="ri-menu-line nav__burger"></i>
+                 <i class="ri-close-line nav__close"></i>
+              </div>
+           </div>
+
+    <!--MENÚ DE NAVEGACIÓN-->
+    <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+           <li><a href="#" class="nav__link">Inicio</a></li>
+
+           <li><a href="#" class="nav__link">Socios</a></li>
+
+    <!--MENÚ DESPLEGABLE #1-->
+    <li class="dropdown__item">
+        <div class="nav__link">
+           Analiticas <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+        </div>
+
+        <ul class="dropdown__menu">
+           <li>
+              <a href="#" class="dropdown__link">
+                 <i class="ri-pie-chart-line"></i> Descripción
+              </a>                          
+           </li>
+
+           <li>
+              <a href="#" class="dropdown__link">
+                 <i class="ri-arrow-up-down-line"></i> Transaciones
+              </a>
+           </li>
+
+    <!--POPING MENÚ-->
+    <li class="dropdown__subitem">
+        <div class="dropdown__link">
+           <i class="ri-bar-chart-line"></i> Reportes <i class="ri-add-line dropdown__add"></i>
+        </div>
+
+        <ul class="dropdown__submenu">
+           <li>
+              <a href="#" class="dropdown__sublink">
+                 <i class="ri-file-list-line"></i> Documentos
+              </a>
+           </li>
+
+           <li>
+              <a href="#" class="dropdown__sublink">
+                 <i class="ri-cash-line"></i> Pagos
+              </a>
+           </li>
+
+           <li>
+              <a href="#" class="dropdown__sublink">
+                 <i class="ri-refund-2-line"></i> Reembolsos
+              </a>
+           </li>
+        </ul>
+    </li>
+  </ul>
+</li>
+
+<li><a href="#" class="nav__link">Productos</a></li>
+
+    <!--MENÚ DESPLEGABLE #2-->
+    <li class="dropdown__item">
+        <div class="nav__link">
+           Usuarios <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+        </div>
+
+        <ul class="dropdown__menu">
+           <li>
+              <a href="#" class="dropdown__link">
+                 <i class="ri-user-line"></i> Perfiles
+              </a>                          
+           </li>
+
+           <li>
+              <a href="#" class="dropdown__link">
+                 <i class="ri-lock-line"></i> Cuentas
+              </a>
+           </li>
+
+           <li>
+              <a href="#" class="dropdown__link">
+                 <i class="ri-message-3-line"></i> Mensajes
+              </a>
+           </li>
+        </ul>
+     </li>
+
+     <li><a href="#" class="nav__link">Contactos</a></li>
+  </ul>
+</div>
+</nav>
+</header>
+<!-- CUERPO DE LA PAGINA -->
+<main>
+   <!-- PRESENTACIÓN -->
+   <section class="backhome">
+      <section class="home">
+         <section class="cubehome">
+            <p>Nuevas Ofertas!</p>
+            <h1>Productos cerca de tu hogar</h1>
+            <p>Encuentra Ofertas de hasta un 20% de Descuento sin costo de envio</p>
+         </section>
+      </section>
+   </section>
+   <!-- TARJETAS DE EVENTO -->
+   <section class="contain">
+      <div class="card__contain">
+         <article class="card__article cart1">
+            <img src="recursos/assets/coffe2.webp" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Sabor que Cuenta una Historia"</span>
+               <h2 class="card__title">Café Artesanal</h2>
+               <a href="#" class="card__button">Leer más</a>
+            </div>
+         </article>
+
+         <article class="card__article cart2">
+            <img src="recursos/assets/coffe6.webp" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Sabor que Inspira Viajes</span>
+               <h2 class="card__title">Café de Aventura</h2>
+               <a href="#" class="card__button">Leer más</a>
+            </div>
+         </article>
+
+         <article class="card__article cart3">
+            <img src="recursos/assets/coffe4.webp" alt="image" class="card__img">
+
+            <div class="card__data">
+               <span class="card__description">Disfruta la Calidez de Tu Propia Taza</span>
+               <h2 class="card__title">Café Casero</h2>
+               <a href="#" class="card__button">Leer más</a>
+            </div>
+         </article>
+      </div>
+   </section>
+
+</main>
+<!--SECCION DE ENVIOS-->
+<section class="caja__envio">
+    <ul class="envio__botones">
+        <li class="botones__caja">
+            <ion-icon name="send-outline" class="botones__icono"></ion-icon>
+            <p>Envíos a todas partes del país</p>
+        </li>
+        <li class="botones__caja">
+            <ion-icon name="call-outline" class="botones__icono"></ion-icon>
+            <p>Soporte para Socios y Clientes </br> <strong>24/7</strong></p>
+        </li>
+        <li class="botones__caja">
+            <ion-icon name="cash-outline" class="botones__icono"></ion-icon>
+            <p>Precios accesibles para todos</p>
+        </li>
+        <li class="botones__caja">
+            <ion-icon name="rocket-outline" class="botones__icono"></ion-icon>
+            <p>Transacciones rapidas y seguras </br> de la plataforma</p>
+        </li>
+    </ul>
+</section>
+<!--SECCION DE SOLO PARA TI-->
+<section class="caja__solo-para-ti">
+    <figure class="solo-para-ti__imagen-caja">
+        <img src="recursos/assets/mujer-joven-que-mira-smartphone-oficina-1.webp" alt="Mirando su smartphone" class="solo-para-ti__imagen">
+    </figure>
+    <article class="solo-para-ti__info">
+        <h2 class="solo-para-ti__titulo">
+            Solo para vos
+        </h2>
+        <p class="solo-para-ti__descripcion">
+            Ofrecemos el servicio mas completo en el sector primario. Además, contamos con productos de calidad
+            100% nacionales y personalizados para que obtengas lo mejor de nuestros socios.
+        </p>
+    </article>
+</section>
+<!--FOOTER -->
+<footer class="caja__footer">
+    <section class="footer__caja-informacion">
+        <article class="footer__articulo articulo1">
+            <h3 class="articulo__titulo">
+                Servicios
+            </h3>
+            <ul class="articulos__caja">
+                <li class="articulos__item">Pedidos especiales</li>
+                <li class="articulos__item">Alcance de tus productos</li>
+                <li class="articulos__item">Cajas personalizados</li>
+            </ul>
+        </article>
+        <article class="footer__articulo articulo2">
+            <h3 class="articulo__titulo">
+                Inicio
+            </h3>
+            <ul class="articulos__caja">
+                <li class="articulos__item">Nuevas Ofertas</li>
+                <li class="articulos__item">Sabores</li>
+            </ul>
+        </article>
+        <article class="footer__articulo articulo3">
+            <h3 class="articulo__titulo">
+                Ayuda
+            </h3>
+            <ul class="articulos__caja">
+                <li class="articulos__item">Terminos y condiciones</li>
+                <li class="articulos__item">Politicas de Privacidad</li>
+            </ul>
+        </article>
+        <article class="footer__articulo articulo4">
+            <h3 class="articulo__titulo">
+                Contactos
+            </h3>
+            <ul class="articulos__caja">
+                <li class="articulos__item">
+                    <ion-icon name="location-outline" class="contacto__icono"></ion-icon>
+                    Managua, Nicaragua
+                </li>
+                <li class="articulos__item">
+                    <ion-icon name="call-outline" class="contacto__icono"></ion-icon>
+                    +505 8684-0709
+                </li>
+                <li class="articulos__item">
+                    <ion-icon name="mail-outline" class="contacto__icono"></ion-icon>
+                    info@agrolink.com
+                </li>
+            </ul>
+        </article>
+    </section>
+    <img src="recursos/assets/blan.png" alt="Logo" class="logo__footer"/>
+    <section class="footer__footer">
+        <footer class="footer__final">
+            <p>© 2024 Agrolink.com, Inc.</p>
+        </footer>
+    </section>
+</footer>
+<!--ENLACES JAVASCRIPT-->
+<script src="recursos/js/script.js"></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@latest/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
