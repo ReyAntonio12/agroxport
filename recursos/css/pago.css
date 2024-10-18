@@ -12,15 +12,18 @@
   --crema-2: hsl(40, 47%, 40%);
   --crema-3: hsl(40, 45%, 38%);
   --crema-4: hsl(34, 90%, 85%);
-  --verde-1: hsl(145, 30%, 65%);
-  --verde-2: hsl(145, 45%, 50%);
-  --verde-3: hsl(140, 40%, 48%);
+  --crema-5: hsl(40, 45%, 68%);
+  --verde-1: hsl(100, 55%, 74%);
+  --verde-2: hsl(100, 50%, 64%);
+  --verde-3: hsl(110, 45%, 53%);
+  --gris-1: hsl(0, 0%, 90%);
+  --gris-2: hsl(0, 0%, 80%);
+  --gris-3: hsl(0, 0%, 70%);
   --negro: hsl(0, 24%, 18%);
   --blanco: #fff;
   --body-color: hsl(220, 100%, 97%);
   --gris: #E8E8EA;
   --gris-oscuro: #bebec4;
-
 
   /*Tipografia*/
   /*5rem = 8px | 1rem = 16px*/
@@ -75,6 +78,7 @@ ul {
 
 a {
   text-decoration: none;
+
 }
 
 .container {
@@ -150,9 +154,9 @@ a {
 
 /* Imagen de presentación */
 
-.backhome{
+.backhome {
   background-image: linear-gradient(#3838387e,rgba(54, 54, 54, 0.61)), url(../assets/cata.webp);
-  min-height: 90vh;
+  min-height: 80vh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -161,157 +165,118 @@ a {
 }
 
 /* Texto de presentación */
-.home{
-  padding-top: 12%;
-  color: var(--crema-4);
+.home {
+padding-top: 13%;
+}
+
+.homet {
+  padding-top: 2rem;
+  color: var(--blanco);
   text-align: center;
   font-family: var(--Letra-1);
+  font-size: 2.7rem;
+  text-shadow: #bebec4 1px 1px 2px;
 }
 
-.cubehome{
-  position: relative;
-  top: 10%;
-  left: 5%;
-  width: 30rem;
-  height: 21rem;
-  background-color: var(--crema-1);
-  border-radius: 5%;
-  box-shadow: -3px 3px  var(--crema-4);
-
-}
-
-.home p{
-  font-size: 1.2rem;
+.homet p {
+  padding-top: 3%;
+  font-size: 1rem;
   font-weight: var(--font-semi-bold);
-  padding: 6%;
-  color: var(--blanco);
 }
 
-.home h1{
-  font-size: 2.5rem;
-  padding: 0 15% 0 15%;
-  text-shadow: -3px 3px var(--crema-3);
+.homet a {
+  color: var(--blanco);
+  cursor: pointer;
 }
-/* CARTAS DE EVENTO */
+
+.homet a:hover {
+  transition: ease-in-out 400ms;
+  color: var(--crema-5);
+}
+/* SONA DE PAGOS */
 .contain{
   display: flex;
-  place-items: center;
-  margin: 1.5rem;
-  padding: 7.5rem;
+  justify-content: center;
+  align-items: center;
+  padding:25px;
 }
 
-.card__contain{
+.contain form{
+  padding:20px;
+  width:700px;
+}
+
+.contain form .row{
   display: flex;
-  gap: 2.5rem;
-
+  flex-wrap: wrap;
+  gap: 55px;
 }
 
-.card__article {
-  position: relative;
-  overflow: hidden;
+.contain form .row .col{
+  flex:1 1 270px;
 }
 
-.card__img {
-  width: 328px;
-  border-radius: 1.5rem;
+.contain form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
-.card__data {
-  width: 280px;
-  background-color: var(--crema-4);
-  padding: 1.5rem 2rem;
-  box-shadow: 0 8px 24px hsla(0, 0%, 0%, .15);
-  border-radius: 1rem;
-  position: absolute;
-  bottom: -9rem;
-  left: 0;
-  right: 0;
-  margin-inline: auto;
-  opacity: 0;
-  transition: opacity 1s 1s;
+.contain form .row .col .inputBox{
+  margin: 20px 0;
 }
 
-.card__description {
+.inputBox img{
+  width: 4.5rem;
+}
+
+.contain form .row .col .inputBox span{
+  margin-bottom: 10px;
   display: block;
-  font-size: var(--small-font-size);
-  margin-bottom: .25rem;
 }
 
-.card__title {
-  font-size: var(--h2-font-size);
-  font-weight: 500;
-  color: var(--title-color);
-  margin-bottom: .75rem;
+.contain form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  text-transform: none;
 }
 
-.card__button {
-  text-decoration: none;
-  font-size: var(--small-font-size);
-  font-weight: 500;
-  color: var(--first-color);
+.contain form .row .col .inputBox input:focus{
+  border:1px solid #000;
 }
 
-.card__button:hover {
-  text-decoration: underline;
+.contain form .row .col .flex{
+  display: flex;
+  gap:15px;
 }
 
-/* Naming animations in hover */
-.card__article:hover .card__data {
-  animation: show-data 1s forwards;
-  opacity: 1;
-  transition: opacity .3s;
+.contain form .row .col .flex .inputBox{
+  margin-top: 5px;
 }
 
-.card__article:hover {
-  animation: remove-overflow 2s forwards;
+.contain form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
 }
 
-.card__article:not(:hover) {
-  animation: show-overflow 2s forwards;
+.contain form .submit-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: var(--crema-1);
+  color:#fff;
+  margin-top: 5px;
+  cursor: pointer;
 }
 
-.card__article:not(:hover) .card__data {
-  animation: remove-data 1s forwards;
+.contain form .submit-btn:hover{
+  background: var(--crema-5);
+  color: var(--negro);
 }
-
-/* Card animation */
-@keyframes show-data {
-  50% {
-    transform: translateY(-10rem);
-  }
-  100% {
-    transform: translateY(-7rem);
-  }
-}
-
-@keyframes remove-overflow {
-  to {
-    overflow: initial;
-  }
-}
-
-@keyframes remove-data {
-  0% {
-    transform: translateY(-7rem);
-  }
-  50% {
-    transform: translateY(-10rem);
-  }
-  100% {
-    transform: translateY(.5rem);
-  }
-}
-
-@keyframes show-overflow {
-  0% {
-    overflow: initial;
-    pointer-events: none;
-  }
-  50% {
-    overflow: hidden;
-  }
-}
-
 
 /* Navegación para dispositivos otros */
 @media screen and (max-width: 1118px) {
