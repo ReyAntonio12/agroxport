@@ -635,22 +635,22 @@
   
   .collection-card .card-text {
     color: var(--black);
-    text-shadow: #fff 0.5px 0.5px 3px;
+    text-shadow: #fff 0.5px 0.5px 1.5px;
     font-size: var(--fs-6);
     font-weight: var(--fw-600);
     margin-block-end: auto;
   }
 
   .btn-link{
-    color: var(--crema-4);
+    color: var(--crema-2);
     font-size: 2rem;
-    text-shadow: var(--crema-1) 1.3px 1.3px 3px;
+    text-shadow: var(--crema-4) 1.3px 1.3px 3px;
     cursor: pointer;
   }
   
   .btn-link:hover .btn-links:hover{
     transition: ease 200ms;
-    color: var(--blanco);
+    color: var(--hoockers-green);
   }
   
   
@@ -911,15 +911,15 @@
   
   .bolg{
     margin: 1rem;
-    color: var(--gris-oscuro);
-    text-shadow: #414141 0.5px 0.5px 0.5px;
+    color: var(--hoockers-green);
+    text-shadow: #272727 0.5px 0.5px 0.5px;
     text-align: center;
     cursor: pointer;
   }
   
   .bolg:hover{
     transition: ease 270ms;
-    color: var(--hoockers-green);
+    color: var(--gray-web);
   }
   
   
