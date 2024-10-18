@@ -258,26 +258,6 @@
     background-position: center;
   }
   
-  .h1,
-  .h2,
-  .h3,
-  .h2-large {
-    color: var(--black);
-    font-weight: var(--fw-600);
-    line-height: 1.3;
-  }
-  
-  .h1 {
-    font-size: var(--fs-1);
-    line-height: 1.2;
-  }
-  
-  .h2 { font-size: var(--fs-3); }
-  
-  .h2-large { font-size: var(--fs-2); }
-  
-  .h3 { font-size: var(--fs-4); }
-  
   .btn {
     font-weight: var(--fw-600);
     max-width: max-content;
@@ -494,6 +474,33 @@
   
   .header-action-btn:is(:hover, :focus) { color: var(--gris-2); }
   
+  /* LETRAS DE CARTELES OVILES */
+  .h1{
+    color: #fff;
+    font-size: 5rem;
+    text-shadow: #bebec4 1px 1px 3px;
+  }
+
+  .hk{
+    color: #333;
+    font-size: 5rem;
+    text-shadow: #E8E8EA 1px 1px 3px;
+  }
+
+  .hero-text{
+    color: #ececec;
+    font-weight: 500;
+    text-shadow: #333 1px 1px;
+  }
+
+  .price{
+    color: var(--black);
+    font-size: var(--fs-5);
+    font-weight: var(--fw-600);
+    text-shadow: #bebec4 1px 1px 3px;
+    margin-block-end: 20px;
+  }
+
   /*-----------------------------------*\
     #MOBILE NAVBAR
   \*-----------------------------------*/
@@ -572,6 +579,7 @@
     #HERO
   \*-----------------------------------*/
   
+  
   .hero { padding-block-start: 0; }
   
   .hero-card {
@@ -585,7 +593,7 @@
     margin-block: 16px 30px;
   }
   
-  .hero .price {
+  .hero {
     color: var(--black);
     font-size: var(--fs-5);
     font-weight: var(--fw-600);
@@ -601,7 +609,7 @@
   /*-----------------------------------*\
     #COLLECTION
   \*-----------------------------------*/
-  
+
   .collection { padding-block-start: 0; }
   
   .collection-list {
@@ -619,14 +627,31 @@
   }
   
   .collection-card .card-title { margin-block-end: 12px; }
+
+  .card-title{
+    color: var(--blanco);
+    text-shadow: var(--gris-1) 1px 1px 2px;
+  }
   
   .collection-card .card-text {
     color: var(--black);
+    text-shadow: #fff 0.5px 0.5px 3px;
     font-size: var(--fs-6);
     font-weight: var(--fw-600);
     margin-block-end: auto;
   }
+
+  .btn-link{
+    color: var(--crema-4);
+    font-size: 2rem;
+    text-shadow: var(--crema-1) 1.3px 1.3px 3px;
+    cursor: pointer;
+  }
   
+  .btn-link:hover .btn-links:hover{
+    transition: ease 200ms;
+    color: var(--blanco);
+  }
   
   
   
@@ -634,7 +659,12 @@
   /*-----------------------------------*\
     #SHOP
   \*-----------------------------------*/
-  
+
+  .section-titles{
+    color: var(--crema-5);
+    text-shadow: var(--crema-2) 1px 1px 1px;
+  }
+
   .shop .title-wrapper {
     display: flex;
     flex-wrap: wrap;
@@ -644,7 +674,7 @@
     margin-block-end: 50px;
   }
   
-  .shop .btn-link:is(:hover, :focus) { color: var(--hoockers-green); }
+  .shop .btn-link:is(:hover, :focus) { color: var(--crema-1); }
   
   .shop-card .card-banner {
     position: relative;
