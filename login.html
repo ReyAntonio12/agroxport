@@ -2,8 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="shortcut icon" href="/recursos/img/agro.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/recursos/css/login.css">
+    <link rel="shortcut icon" href="recursos/img/agro.ico" type="image/x-icon">
+    <link rel="stylesheet" href="recursos/css/login.css">
     <!--GRAFICOS EXTERNOS-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
@@ -21,17 +21,17 @@
             <div class="input-field">
               <!-- BARRA DE USUARIO -->
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Nombre" />
+              <input type="text" placeholder="Nombre"/>
             </div>
             <!-- BARRA DE CONTRASEÑA -->
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Contraseña" />
+              <input type="password" placeholder="Contraseña"/>
             </div>
             <!-- CéDULA -->
             <div class="input-field">
               <i class="fa-solid fa-id-card"></i>
-              <input type="text" placeholder="Cédula" />
+              <input type="text" placeholder="Cédula"/>
             </div>
             <!-- BOTON INICIAR SESIÓN -->
             <input type="submit" value="Inicio de sesión" class="btn solid" />
@@ -53,37 +53,37 @@
             </div>
           </form>
           <!-- REGISTRO DE CUENTA NUEVA -->
-          <form action="#" class="sign-up-form">
+          <form action="http://localhost:3000/guardar-datos" class="sign-up-form" method="post">
             <h2 class="title">Registrar</h2>
             <div class="input-field">
               <!-- BARRA DE USUARIO -->
               <i class="fas fa-user"></i>
-              <input type="text" placeholder="Nombre" />
+              <input type="text" placeholder="Nombre" name="nom" id="nom" />
             </div>
             <!-- BARRA DE CORREO -->
             <div class="input-field">
               <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Correo" />
+              <input type="email" placeholder="Correo" name="corr" id="corr"/>
             </div>
             <!-- CONTRASENA -->
             <div class="input-field">
               <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Contraseña" />
+              <input type="password" placeholder="Contraseña" name="pw" id="pw" />
             </div>
             <!-- CéDULA -->
             <div class="input-field">
               <i class="fa-solid fa-id-card"></i>
-              <input type="text" placeholder="Cédula" />
+              <input type="text" placeholder="Cédula" name="ced" id="ced" />
             </div>
             <!-- TELEFONO -->
             <div class="input-field">
               <i class="fa-solid fa-phone"></i>
-              <input type="tel" placeholder="Numero" />
+              <input type="tel" placeholder="Numero" name="tel" id="tel"/>
             </div>
             <!-- NACIONALIDAD -->
             <div class="input-field">
               <i class="fa-solid fa-flag"></i>
-              <input type="text" placeholder="Nacionalidad" />
+              <input type="text" placeholder="Nacionalidad" name="nac" id="nac"/>
             </div>
             <!-- REDES SOCIALES-->
             <input type="submit" class="btn" value="Registrar" />
@@ -138,6 +138,6 @@
       </div>
     </div>
 
-    <script src="/recursos/js/login.js"></script>
+    <script src="recursos/js/login.js"></script>
 </body>
 </html>
