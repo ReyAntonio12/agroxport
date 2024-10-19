@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="recursos/css/style.css"/>
     <link rel="stylesheet" href="recursos/css/responsive.css"/>
     <link rel="stylesheet" href="recursos/css/carrito.css"> 
+    <link rel="stylesheet" href="recursos/css/loading.css">
     <!--ENLACES EXTERNOS -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>Agrolink | Carrito </title>
@@ -17,6 +18,13 @@
     <div class="contenedor__carrito">
         <!--ENCABEZADO-->
     <header class="header">
+            <!--LOADING SCREEN-->   
+      <div class="load">
+        <div class="loader">
+           <div class="loader-inner"></div>
+        </div>
+     </div> 
+     <!-- NAV BAR -->
         <nav class="nav container">
            <div class="nav__data">
               <a href="#" class="nav__logo"> 
@@ -157,7 +165,7 @@
                     <img src="recursos/assets/coffe5.webp" alt="Taza de Cafe" class="imagen__cafe" />
                     <p class="imagen__cafe-descripcion"> Cafe Selva Negra</p>
                 </div>
-                <form action="#" class="carrito__formulario" >
+                <div class="carrito__formulario" >
                     <div class="carrito__precio">
                         <p class="precio__precio">
                             C$ 49.99
@@ -183,11 +191,11 @@
                         </p>
                     </div>
                     <div class="carrito__enviar">
-                        <a href="#" class="boton__comprar">
+                        <a href="pago.html" class="boton__comprar">
                             <input type="submit" class="cantidad__submit" value="Comprar" />
                         </a>
                     </div>
-                </form>
+                </div>
             </article>
             <aside class="carrito__resumen">
                 <section class="resumen__container">
@@ -275,5 +283,6 @@
 </footer>
 </div>
 <script src="recursos/js/script.js"></script>
+<script src="recursos/js/loading.js"></script>
 </body>
 </html>

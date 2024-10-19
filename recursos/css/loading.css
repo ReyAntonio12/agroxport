@@ -1,0 +1,90 @@
+/* PRELOADER SCREEN */
+:root{
+  --crema-1: hsl(44, 32%, 45%);
+  --crema-2: hsl(40, 47%, 40%);
+  --crema-3: hsl(40, 45%, 38%);
+  --crema-4: hsl(34, 90%, 85%);
+  --crema-5: hsl(40, 45%, 68%);
+}
+
+.load{
+    background: var(--crema-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 9999;
+    transition: opacity 1.35s, visibility 1.35s;
+}
+
+.load--hidden{
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader {
+    display: inline-block;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 5px solid #Fff;
+    top: 50%;
+    animation: loader 2s infinite ease;
+}
+  
+  .loader-inner {
+    vertical-align: top;
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    animation: loader-inner 2s infinite ease-in;
+  }
+
+  @keyframes loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    
+    25% {
+      transform: rotate(180deg);
+    }
+    
+    50% {
+      transform: rotate(180deg);
+    }
+    
+    75% {
+      transform: rotate(360deg);
+    }
+    
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes loader-inner {
+    0% {
+      height: 0%;
+    }
+    
+    25% {
+      height: 0%;
+    }
+    
+    50% {
+      height: 100%;
+    }
+    
+    75% {
+      height: 100%;
+    }
+    
+    100% {
+      height: 0%;
+    }
+  }
