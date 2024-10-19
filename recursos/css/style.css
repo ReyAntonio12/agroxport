@@ -431,7 +431,7 @@ a {
 
 /*Responsive, adaptación tamaño dispositivos*/
 /* Pantallas pequeñas */
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 350px) {
   .container {
     margin-inline: 1rem;
   }
@@ -443,15 +443,54 @@ a {
   .log{
     width: 8rem;
   }
-/* 
-  .contain {
-    margin-inline: 1rem;
+
+  .contain{
+    padding: 17px;
   }
 
+  .card__img{
+    width: 270px;
+  }
+  
   .card__data {
-    width: 250px;
+    width: 180px;
+  }
+
+  .card_title .card__description{
+    font-size: 9px;
+  }
+
+  .card__contain{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 1.5rem;
+  }
+
+  .backhome{
+    min-height: 80vh;
+  }
+
+  .cubehome{
+    width: 20rem;
+    height: 12.5rem;
+  }
+
+  .home{
+    padding-top: 8rem;
+  }
+
+  .home p{
+    font-size: 15px;
     padding: 1rem;
-  } */
+  }
+
+  .home h1{
+    font-size: 21px;
+  }
+
+  .solo-para-ti__info{
+    width: 40%;
+  }
 }
 
 
@@ -468,14 +507,7 @@ a {
   .log{
     width: 10rem;
   }
-/* 
-  .card__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1.5rem;
-  } */
 }
-
-
 
 /* Pantallas largas */
 @media screen and (min-width: 1118px) {
@@ -553,21 +585,7 @@ a {
     pointer-events: initial;
     transition: top .3s;
   }
-  /* CARTAS */
-/*   .container {
-    height: 100vh;
-  }
-
-  .card__container {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .card__img {
-    width: 348px;
-  }
-  .card__data {
-    width: 316px;
-    padding-inline: 2.5rem;
-  } */
+ 
 }
 
 
@@ -597,12 +615,6 @@ a {
   text-align: center;
   cursor: pointer;
 }
-
-/* 
-.botones__caja:hover{
-
-}
-*/
 
 .botones__icono{
   color: var(--crema-2);
