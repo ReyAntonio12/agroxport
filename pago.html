@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <link rel="shortcut icon" href="agro.ico" type="image/x-icon">
     <link rel="stylesheet" href="recursos/css/pago.css">
+    <link rel="stylesheet" href="recursos/css/loading.css">
     <!--GRAFICOS EXTERNOS-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,13 @@
 <body>
     <!--ENCABEZADO-->
     <header class="header">
+      <!--LOADING SCREEN-->   
+      <div class="load">
+         <div class="loader">
+            <div class="loader-inner"></div>
+         </div>
+      </div> 
+      <!-- NAV BAR -->
         <nav class="nav container">
            <div class="nav__data">
               <a href="#" class="nav__logo"> 
@@ -203,7 +211,66 @@
 </div> 
 
 </main>
+<!--FOOTER -->
+<footer class="caja__footer">
+   <section class="footer__caja-informacion">
+       <article class="footer__articulo articulo1">
+           <h3 class="articulo__titulo">
+               Servicios
+           </h3>
+           <ul class="articulos__caja">
+               <li class="articulos__item">Pedidos especiales</li>
+               <li class="articulos__item">Alcance de tus productos</li>
+               <li class="articulos__item">Cajas personalizados</li>
+           </ul>
+       </article>
+       <article class="footer__articulo articulo2">
+           <h3 class="articulo__titulo">
+               Inicio
+           </h3>
+           <ul class="articulos__caja">
+               <li class="articulos__item">Nuevas Ofertas</li>
+               <li class="articulos__item">Sabores</li>
+           </ul>
+       </article>
+       <article class="footer__articulo articulo3">
+           <h3 class="articulo__titulo">
+               Ayuda
+           </h3>
+           <ul class="articulos__caja">
+               <li class="articulos__item">Terminos y condiciones</li>
+               <li class="articulos__item">Politicas de Privacidad</li>
+           </ul>
+       </article>
+       <article class="footer__articulo articulo4">
+           <h3 class="articulo__titulo">
+               Contactos
+           </h3>
+           <ul class="articulos__caja">
+               <li class="articulos__item">
+                   <ion-icon name="location-outline" class="contacto__icono"></ion-icon>
+                   Managua, Nicaragua
+               </li>
+               <li class="articulos__item">
+                   <ion-icon name="call-outline" class="contacto__icono"></ion-icon>
+                   +505 8684-0709
+               </li>
+               <li class="articulos__item">
+                   <ion-icon name="mail-outline" class="contacto__icono"></ion-icon>
+                   info@agrolink.com
+               </li>
+           </ul>
+       </article>
+   </section>
+   <img src="recursos/assets/blan.png" alt="Logo" class="logo__footer"/>
+   <section class="footer__footer">
+       <footer class="footer__final">
+           <p>© 2024 Agrolink.com, Inc.</p>
+       </footer>
+   </section>
+</footer>
 
 <script src="recursos/js/script.js"></script>
+<script src="recursos/js/loading.js"></script>
 </body>
 </html>
