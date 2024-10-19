@@ -6,10 +6,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="recursos/css/catalogo.css">
-    <link rel="preload" as="image" href="./assets/images/logo.png">
-    <link rel="preload" as="image" href="./assets/images/hero-banner-1.jpg">
-    <link rel="preload" as="image" href="./assets/images/hero-banner-2.jpg">
-    <link rel="preload" as="image" href="./assets/images/hero-banner-3.jpg">
+    <link rel="stylesheet" href="recursos/css/loading.css">
     <link rel="shortcut icon" href="recursos/img/Agro.ico" type="image/svg+xml">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agrolink | Catalogo</title>
@@ -18,6 +15,13 @@
 
 <!-- INICIO DE ESTRUCTURACIÓN -->
       <header class="header">
+          <!--LOADING SCREEN-->   
+      <div class="load">
+        <div class="loader">
+           <div class="loader-inner"></div>
+        </div>
+     </div> 
+     <!-- NAV BAR -->
         <div class="header-top" data-header>
           <div class="container">
         <!-- BARRA DE NAVEGACIÓN -->
@@ -1311,6 +1315,7 @@
       <!-- 
         - ionicon link
       -->
+      <script src="recursos/js/loading.js"></script>
       <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
       <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="recursos/css/style.css"/>
     <link rel="stylesheet" href="recursos/css/responsive.css"/>
     <link rel="stylesheet" href="recursos/css/carrito.css"> 
+    <link rel="stylesheet" href="recursos/css/loading.css">
     <!--ENLACES EXTERNOS -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
     <title>Agrolink | Carrito </title>
@@ -17,6 +18,13 @@
     <div class="contenedor__carrito">
         <!--ENCABEZADO-->
     <header class="header">
+            <!--LOADING SCREEN-->   
+      <div class="load">
+        <div class="loader">
+           <div class="loader-inner"></div>
+        </div>
+     </div> 
+     <!-- NAV BAR -->
         <nav class="nav container">
            <div class="nav__data">
               <a href="#" class="nav__logo"> 
@@ -32,7 +40,7 @@
     <!--MENÚ DE NAVEGACIÓN-->
     <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-           <li><a href="#" class="nav__link">Inicio</a></li>
+           <li><a href="index.html" class="nav__link">Inicio</a></li>
 
            <li><a href="#" class="nav__link">Socios</a></li>
 
@@ -183,7 +191,7 @@
                         </p>
                     </div>
                     <div class="carrito__enviar">
-                        <a href="#" class="boton__comprar">
+                        <a href="pago.html" class="boton__comprar">
                             <input type="submit" class="cantidad__submit" value="Comprar" />
                         </a>
                     </div>
@@ -275,5 +283,6 @@
 </footer>
 </div>
 <script src="recursos/js/script.js"></script>
+<script src="recursos/js/loading.js"></script>
 </body>
 </html>
