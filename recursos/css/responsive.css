@@ -30,5 +30,37 @@
     .articulo4{
         grid-area: object4;
     }
+
+    /* Responsive de la pagina de carrito */
+    .carrito__detalles{
+        display:flex !important;
+        flex-direction: column;
+        padding-top: 2.5rem;
+        padding-bottom: 3rem;
+        align-items: center;
+    }
+
+    .detalles__inico{
+        grid-area: detalle;
+    }
+
+    .carrito__compra{
+        grid-area: carrito;
+    }
+    
+    .carrito__resumen{
+        grid-area: aside;
+    }
+
+    .carrito__formulario{
+        align-items: center;
+        padding-bottom: 9rem;
+    }
+
+    .cantidad__submit{
+        position: absolute;
+        top: 65%;
+        left: 25%;
+    } 
 }
     

@@ -12,6 +12,7 @@
 }
 
 .carrito__header{
+    position: relative;
     width: 100%;
     height: 100px;
     background-color: var(--crema-3);
