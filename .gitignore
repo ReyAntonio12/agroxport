@@ -1,4 +1,4 @@
 # Ignora la carpeta completa de 'node_modules'
 node_modules/
 
-
+package-lock.json/
